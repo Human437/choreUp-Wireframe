@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <title>Dreamwalker</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+      <link rel="stylesheet" type="text/css" href="./../pagesCSS/card-recommender.css">
+  </head>
+
+  <body>
+    <nav role="navigation">
+      <a href="./">Home</a>
+      <a href = './pagesHTML/my-chores.html'>My Chores</a>
+      <a href = './pagesHTML/createAChore.html'>Create a Chore</a>
+      <a href = './pagesHTML/managementPage.html'>Management</a>
+      <button><a href="./pagesHTML/sign-in.html">Sign In</a></button>
+      <button><a href="./pagesHTML/sign-up.html">Sign Up</a></button>
+  </nav>
+    <main role="main">
+      <header>
+        <h1>Create a new chore</h1>
+      </header>
+      <section>
+        <form id="chore-creator">
+          <section class="form-section overview-section">
+            <label for="dream-title">Chore Name</label>
+            <input type="text" name="dream-title" placeholder="Chore Name here" required>
+          </section>
+          <section class="form-section overview-section">
+            <label for="dream-title">Due date</label>
+            <input type="date" name="dream-title" required>
+          </section>
+          <section class="form-section overview-section">
+            <label for="status">Status</label>
+            <select name = 'status' required>
+              <option value='new'>New</option>
+              <option value ='read'>Read</option>
+              <option value ='in process'>In Process</option>
+              <option value ='done'>Done</option>
+              <option value ='unable to complete'>Unable to complete</option>
+              <option value ='on hold'>On hold</option>
+            </select>
+          </section>
+          <section class="form-section overview-section">
+            <label for="dream-title">Comments</label>
+            <textarea name ='comments' placeholder="Write comments here"></textarea>
+          </section>
+          <section class="form-section overview-section">
+            <label for="dream-title">Reward</label>
+            <input type="number" name="dream-title" placeholder="XP here" required>
+          </section>
+          <section class="button-section">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </section>
+
+        </form>
+      </section>
+    </main>
+  </body>
+
+</html>
